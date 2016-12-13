@@ -1,0 +1,1 @@
+/* file contains functions to call at application startup or on document ready */

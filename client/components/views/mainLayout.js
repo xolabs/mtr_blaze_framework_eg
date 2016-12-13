@@ -1,0 +1,1 @@
+/* This file is for most global template contexts for the app. */
