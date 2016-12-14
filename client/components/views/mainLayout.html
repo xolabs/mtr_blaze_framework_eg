@@ -1,1 +1,37 @@
 <!-- This is the main layout for the app -->
+
+<template name="mainLayout">
+<!-- Template: mainLayout; File: mainLayout.html -->
+
+{{#unless Template.subscriptionsReady}}
+
+	{{#unless currentUser}}
+	<p>Logging in...</p>
+	{{/unless}}
+
+	<div class="container">
+		Loading...
+	</div>
+
+{{else}}
+
+{{>Template.dynamic template=mainNav}}
+
+<div class="container">
+
+	<div class="row">
+
+		<div id="EXO-app-content" class="col-md-6 col-offset-md-3">
+			{{>Template.dynamic template=mainContent}}
+		</div>
+
+	</div><!-- /.row -->
+
+</div><!-- /.container -->
+
+{{/unless}}{{! END #unless Template.subscriptionsReady}}
+
+<!-- END Template: mainLayout; File: mainLayout.html -->
+</template>
+
+

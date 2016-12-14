@@ -1,1 +1,22 @@
-<!-- This module handles the list of tasks -->
+<template name="tasksList">
+<!-- Template: tasksList; File: tasksList.html -->
+
+	<h3>This is the tasks list</h3>
+	<div>
+		{{#each tasks}}
+			{{> tasksListItem}}
+		{{/each}}
+	</div>
+	
+<!-- END Template: tasksList; File: tasksList.html -->
+</template>
+
+<template name="tasksListItem">
+<!-- Template: tasksListItem; File: tasksListItem.html -->
+
+<pre>
+	{{this}}
+</pre>
+
+<!-- END Template: tasksList; File: tasksListItem.html -->
+</template>
